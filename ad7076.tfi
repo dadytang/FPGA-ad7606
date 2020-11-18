@@ -1,0 +1,27 @@
+
+
+
+// Instantiate the module
+ad7076 instance_name (
+    .clk(clk), 
+    .rst_n(rst_n), 
+    .ad_data_in(ad_data_in), 
+    .firstdata(firstdata), 
+    .ad_busy(ad_busy), 
+    .ad_cs(ad_cs), 
+    .ad_rd(ad_rd), 
+    .ad_rst(ad_rst), 
+    .ad_data_valid(ad_data_valid), 
+    .convst(convst), 
+    .ad_os(ad_os), 
+    .ad_data_1(ad_data_1), 
+    .ad_data_2(ad_data_2), 
+    .ad_data_3(ad_data_3), 
+    .ad_data_4(ad_data_4), 
+    .ad_data_5(ad_data_5), 
+    .ad_data_6(ad_data_6), 
+    .ad_data_7(ad_data_7), 
+    .ad_data_8(ad_data_8)
+    );
+
+

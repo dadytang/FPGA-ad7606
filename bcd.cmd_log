@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj voltage_sample -o D:/Xilinx/voltage_sample/bcd.tfi -lib work D:/Xilinx/voltage_sample/src//bcd.v -module bcd -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

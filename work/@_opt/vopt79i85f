@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\FPGA\voltage_sample
+T_opt
+Vm]_6JfeE_NR2JcM@1]dm:2
+04 15 4 work uart_drive_test fast 0
+04 4 4 work glbl fast 0
+=1-b025aa3987cf-5f06c1f7-10f-2e48
+o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+OL;O;10.1c;51
+vglbl
+I4b9nnmKVNfb:jWaaBE8Cg3
+VM[9mS]S:KA1i4VeCMX35[3
+Z1 dD:\FPGA\voltage_sample
+Z2 w1381681120
+8D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v
+FD:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+Z3 OL;L;10.1c;51
+r1
+31
+Z4 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 TFB84>>W1Fn6fP`iF=8CU3
+!s85 0
+!s108 1594278390.261000
+!s107 D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v|
+!s90 -reportprogress|300|D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v|
+vuart_drive
+IhdOLzBQWSkY2@:AkiEZTB3
+VLBkN3[>Dg2kJOMFQ<TBnK0
+R1
+w1591182934
+8src/uart_drive.v
+Fsrc/uart_drive.v
+L0 21
+R3
+r1
+31
+R4
+!s100 TK;mQbn<Jb[a048XC_kI?1
+!s108 1594278390.133000
+!s107 src/uart_drive.v|
+!s90 -reportprogress|300|src/uart_drive.v|
+!i10b 1
+!s85 0
+vuart_drive_test
+IkPDfTc2Q8G8PYDYkSQRVb3
+V1PR44KNQLQ?;l`WBjRjVO0
+R1
+w1591067046
+8uart_drive_test.v
+Fuart_drive_test.v
+L0 25
+R3
+r1
+31
+R4
+!s100 H5EQ5[=8_b8Yjj`=QHAGj0
+!s108 1594278390.196000
+!s107 uart_drive_test.v|
+!s90 -reportprogress|300|uart_drive_test.v|
+!i10b 1
+!s85 0
+vuart_tx
+IX>mEL]^5KOe<19[iobSe42
+VL;L?m6z09^Em@ddOeU:4J0
+R1
+w1591080853
+8src/uart_tx.v
+Fsrc/uart_tx.v
+L0 21
+R3
+r1
+31
+R4
+!s100 _VgRJE:Bm=9Wk5P0O>@SP1
+!s108 1594278390.067000
+!s107 src/uart_tx.v|
+!s90 -reportprogress|300|src/uart_tx.v|
+!i10b 1
+!s85 0

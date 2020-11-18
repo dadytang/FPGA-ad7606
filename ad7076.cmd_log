@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj voltage_sample -o D:/Xilinx/voltage_sample/ad7076.tfi -lib work D:/Xilinx/voltage_sample//ad7076.v -module ad7076 -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

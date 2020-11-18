@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+voltage_cal instance_name (
+    .clk(clk), 
+    .rst_n(rst_n), 
+    .ad_ch1(ad_ch1), 
+    .hex(hex), 
+    .sign(sign)
+    );
+
+

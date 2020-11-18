@@ -1,0 +1,106 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jun 04 10:10:27 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "ad_convstab" LOCATE = SITE "A5" LEVEL 1;
+COMP "ad_busy" LOCATE = SITE "B8" LEVEL 1;
+COMP "ad_cs" LOCATE = SITE "A8" LEVEL 1;
+COMP "ad_rd" LOCATE = SITE "A6" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "ad_os<0>" LOCATE = SITE "B5" LEVEL 1;
+COMP "ad_os<1>" LOCATE = SITE "A4" LEVEL 1;
+COMP "ad_os<2>" LOCATE = SITE "B6" LEVEL 1;
+COMP "ad_reset" LOCATE = SITE "A7" LEVEL 1;
+COMP "tx_reg" LOCATE = SITE "D12" LEVEL 1;
+COMP "first_data" LOCATE = SITE "A9" LEVEL 1;
+COMP "ad_data<10>" LOCATE = SITE "D16" LEVEL 1;
+COMP "ad_data<11>" LOCATE = SITE "E15" LEVEL 1;
+COMP "ad_data<12>" LOCATE = SITE "C9" LEVEL 1;
+COMP "ad_data<13>" LOCATE = SITE "E11" LEVEL 1;
+COMP "ad_data<14>" LOCATE = SITE "C10" LEVEL 1;
+COMP "ad_data<15>" LOCATE = SITE "D11" LEVEL 1;
+COMP "ad_data<0>" LOCATE = SITE "A11" LEVEL 1;
+COMP "ad_data<1>" LOCATE = SITE "A12" LEVEL 1;
+COMP "ad_data<2>" LOCATE = SITE "B12" LEVEL 1;
+COMP "ad_data<3>" LOCATE = SITE "A13" LEVEL 1;
+COMP "ad_data<4>" LOCATE = SITE "A14" LEVEL 1;
+COMP "ad_data<5>" LOCATE = SITE "B14" LEVEL 1;
+COMP "ad_data<6>" LOCATE = SITE "B15" LEVEL 1;
+COMP "ad_data<7>" LOCATE = SITE "B16" LEVEL 1;
+COMP "ad_data<8>" LOCATE = SITE "C15" LEVEL 1;
+COMP "ad_data<9>" LOCATE = SITE "C16" LEVEL 1;
+PIN voltage_cal/Mmult_ch1_reg[15]_PWR_7_o_MuLt_11_OUT_pins<92> = BEL
+        "voltage_cal/Mmult_ch1_reg[15]_PWR_7_o_MuLt_11_OUT" PINNAME CLK;
+TIMEGRP sys_clk_pin = BEL "ad_temp_0" BEL "ad_temp_1" BEL "ad_temp_2" BEL
+        "ad_temp_3" BEL "ad_temp_4" BEL "ad_temp_5" BEL "ad_temp_6" BEL
+        "ad_temp_7" BEL "ad_temp_8" BEL "ad_temp_9" BEL "ad_temp_10" BEL
+        "ad_temp_11" BEL "ad_temp_12" BEL "ad_temp_13" BEL "ad_temp_14" BEL
+        "ad_temp_15" BEL "t_0" BEL "t_1" BEL "t_2" BEL "t_3" BEL "i_0" BEL
+        "i_1" BEL "i_2" BEL "i_3" BEL "i_4" BEL "i_5" BEL "i_6" BEL "i_7" BEL
+        "i_8" BEL "i_9" BEL "i_10" BEL "i_11" BEL "i_12" BEL "i_13" BEL "i_14"
+        BEL "i_15" BEL "i_16" BEL "i_17" BEL "i_18" BEL "i_19" BEL "i_20" BEL
+        "i_21" BEL "i_22" BEL "i_23" BEL "i_24" BEL "i_25" BEL "i_26" BEL
+        "i_27" BEL "i_28" BEL "i_29" BEL "i_30" BEL "i_31" BEL "state_0" BEL
+        "state_1" BEL "state_2" BEL "ad7606/cnt_15" BEL "ad7606/cnt_14" BEL
+        "ad7606/cnt_13" BEL "ad7606/cnt_12" BEL "ad7606/cnt_11" BEL
+        "ad7606/cnt_10" BEL "ad7606/cnt_9" BEL "ad7606/cnt_8" BEL
+        "ad7606/cnt_7" BEL "ad7606/cnt_6" BEL "ad7606/cnt_5" BEL
+        "ad7606/cnt_4" BEL "ad7606/cnt_3" BEL "ad7606/cnt_2" BEL
+        "ad7606/cnt_1" BEL "ad7606/cnt_0" BEL "ad7606/state_FSM_FFd2" BEL
+        "ad7606/state_FSM_FFd3" BEL "ad7606/state_FSM_FFd1" BEL
+        "ad7606/state_FSM_FFd4" BEL "ad7606/i_5" BEL "ad7606/i_4" BEL
+        "ad7606/i_3" BEL "ad7606/i_2" BEL "ad7606/i_1" BEL "ad7606/i_0" BEL
+        "ad7606/ad_reset" BEL "ad7606/ad_ch1_15" BEL "ad7606/ad_ch1_14" BEL
+        "ad7606/ad_ch1_13" BEL "ad7606/ad_ch1_12" BEL "ad7606/ad_ch1_11" BEL
+        "ad7606/ad_ch1_10" BEL "ad7606/ad_ch1_9" BEL "ad7606/ad_ch1_8" BEL
+        "ad7606/ad_ch1_7" BEL "ad7606/ad_ch1_6" BEL "ad7606/ad_ch1_5" BEL
+        "ad7606/ad_ch1_4" BEL "ad7606/ad_ch1_3" BEL "ad7606/ad_ch1_2" BEL
+        "ad7606/ad_ch1_1" BEL "ad7606/ad_ch1_0" BEL "uart_drive/i_3" BEL
+        "uart_drive/i_2" BEL "uart_drive/i_1" BEL "uart_drive/i_0" BEL
+        "uart_drive/data_tx_6" BEL "uart_drive/data_tx_5" BEL
+        "uart_drive/data_tx_4" BEL "uart_drive/data_tx_3" BEL
+        "uart_drive/data_tx_2" BEL "uart_drive/data_tx_1" BEL
+        "uart_drive/data_tx_0" BEL "uart_drive/uart_tx/i_8" BEL
+        "uart_drive/uart_tx/i_7" BEL "uart_drive/uart_tx/i_6" BEL
+        "uart_drive/uart_tx/i_5" BEL "uart_drive/uart_tx/i_4" BEL
+        "uart_drive/uart_tx/i_3" BEL "uart_drive/uart_tx/i_2" BEL
+        "uart_drive/uart_tx/i_1" BEL "uart_drive/uart_tx/i_0" BEL
+        "uart_drive/uart_tx/data_bit_3" BEL "uart_drive/uart_tx/data_bit_2"
+        BEL "uart_drive/uart_tx/data_bit_1" BEL
+        "uart_drive/uart_tx/data_bit_0" BEL "_bcd/rese_2" BEL "_bcd/rese_1"
+        BEL "_bcd/rese_0" BEL "_bcd/resd<3:0>_3" BEL "_bcd/resd<3:0>_2" BEL
+        "_bcd/resd<3:0>_1" BEL "_bcd/resd<3:0>_0" BEL "_bcd/resc<3:0>_3" BEL
+        "_bcd/resc<3:0>_2" BEL "_bcd/resc<3:0>_1" BEL "_bcd/resc<3:0>_0" BEL
+        "_bcd/resb<3:0>_3" BEL "_bcd/resb<3:0>_2" BEL "_bcd/resb<3:0>_1" BEL
+        "_bcd/resb<3:0>_0" BEL "_bcd/resa<3:0>_3" BEL "_bcd/resa<3:0>_2" BEL
+        "_bcd/resa<3:0>_1" BEL "_bcd/rhexb_9" BEL "_bcd/rhexb_8" BEL
+        "_bcd/rhexb_7" BEL "_bcd/rhexb_6" BEL "_bcd/rhexb_5" BEL
+        "_bcd/rhexb_3" BEL "_bcd/rhexb_2" BEL "_bcd/rhexb_1" BEL
+        "_bcd/rhexc_13" BEL "_bcd/rhexc_12" BEL "_bcd/rhexc_11" BEL
+        "_bcd/rhexc_10" BEL "_bcd/rhexc_9" BEL "_bcd/rhexc_8" BEL
+        "_bcd/rhexc_7" BEL "_bcd/rhexc_6" BEL "_bcd/rhexc_5" BEL
+        "_bcd/rhexc_3" BEL "_bcd/rhexc_2" BEL "_bcd/rhexc_1" BEL
+        "_bcd/rhexd_18" BEL "_bcd/rhexd_17" BEL "_bcd/rhexd_15" BEL
+        "_bcd/rhexd_13" BEL "_bcd/rhexd_12" BEL "_bcd/rhexd_11" BEL
+        "_bcd/rhexd_10" BEL "_bcd/rhexd_9" BEL "_bcd/rhexd_8" BEL
+        "_bcd/rhexd_7" BEL "_bcd/rhexd_6" BEL "_bcd/rhexd_5" BEL
+        "_bcd/rhexd_3" BEL "_bcd/rhexd_2" BEL "_bcd/rhexd_1" BEL
+        "_bcd/rhex_0_15" BEL "_bcd/rhex_0_14" BEL "_bcd/rhex_0_13" BEL
+        "_bcd/rhex_0_12" BEL "_bcd/rhex_0_11" BEL "_bcd/rhex_0_10" BEL
+        "_bcd/rhex_0_9" BEL "_bcd/rhex_0_8" BEL "_bcd/rhex_0_7" BEL
+        "_bcd/rhex_0_6" BEL "_bcd/rhex_0_5" BEL "_bcd/rhex_0_4" PIN
+        "voltage_cal/Mmult_ch1_reg[15]_PWR_7_o_MuLt_11_OUT_pins<92>" BEL
+        "voltage_cal/sign_2" BEL "voltage_cal/sign_1" BEL "uart_we" BEL
+        "ad7606/ad_rd" BEL "ad7606/ad_convstab" BEL "ad7606/ad_cs" BEL
+        "uart_drive/uart_end" BEL "uart_drive/uart_tx/tx_reg" BEL
+        "uart_drive/uart_tx/uart_tx_end" BEL "uart_drive/uart_tx_we" BEL
+        "_bcd/rhexb_1_1" BEL "_bcd/rhexb_1_2" BEL "_bcd/rhexc_1_1" BEL
+        "_bcd/rhexd_1_1" BEL "clk_BUFGP/BUFG" BEL "_bcd/Mshreg_resa_3" BEL
+        "_bcd/resa_3" BEL "_bcd/Mshreg_rhexa_3" BEL "_bcd/rhexa_3" BEL
+        "_bcd/Mshreg_rhexa_2" BEL "_bcd/rhexa_2" BEL "_bcd/Mshreg_rhexa_1" BEL
+        "_bcd/rhexa_1";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

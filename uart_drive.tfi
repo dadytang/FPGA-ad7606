@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+uart_drive instance_name (
+    .clk(clk), 
+    .rst_n(rst_n), 
+    .dec(dec), 
+    .sign(sign), 
+    .uart_we(uart_we), 
+    .tx_reg(tx_reg), 
+    .uart_end(uart_end)
+    );
+
+

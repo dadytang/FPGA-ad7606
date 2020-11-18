@@ -1,0 +1,105 @@
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/voltage_sample/main_function.xst" -ofn "D:/Xilinx/voltage_sample/main_function.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc voltage_sample.ucf -p xc6slx9-ftg256-2 main_function.ngc main_function.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_function_map.ncd main_function.ngd main_function.pcf 
+par -w -intstyle ise -ol high -mt off main_function_map.ncd main_function.ncd main_function.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main_function.twx main_function.ncd -o main_function.twr main_function.pcf -ucf voltage_sample.ucf 
+bitgen -intstyle ise -f main_function.ut main_function.ncd 

@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj voltage_sample -o D:/Xilinx/voltage_sample/uart_drive.tfi -lib work D:/Xilinx/voltage_sample/src//uart_drive.v -module uart_drive -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

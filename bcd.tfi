@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+bcd instance_name (
+    .clk(clk), 
+    .hex(hex), 
+    .dec(dec)
+    );
+
+

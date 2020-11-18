@@ -1,0 +1,6 @@
+verilog work "src/uart_tx.v"
+verilog work "voltage_cal.v"
+verilog work "src/uart_drive.v"
+verilog work "src/bcd.v"
+verilog work "src/ad7606.v"
+verilog work "src/main_function.v"

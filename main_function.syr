@@ -1,0 +1,947 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: main_function.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main_function.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main_function"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : main_function
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Xilinx\voltage_sample\src\uart_tx.v" into library work
+Parsing module <uart_tx>.
+Analyzing Verilog file "D:\Xilinx\voltage_sample\voltage_cal.v" into library work
+Parsing module <voltage_cal>.
+Analyzing Verilog file "D:\Xilinx\voltage_sample\src\uart_drive.v" into library work
+Parsing module <uart_drive>.
+Analyzing Verilog file "D:\Xilinx\voltage_sample\src\bcd.v" into library work
+Parsing module <bcd>.
+Analyzing Verilog file "D:\Xilinx\voltage_sample\src\ad7606.v" into library work
+Parsing module <ad7606>.
+Analyzing Verilog file "D:\Xilinx\voltage_sample\src\main_function.v" into library work
+Parsing module <main_function>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <main_function>.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 83: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 90: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 97: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 107: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <uart_drive>.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_drive.v" Line 56: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_drive.v" Line 68: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_drive.v" Line 80: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_drive.v" Line 92: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_drive.v" Line 104: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_drive.v" Line 116: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_drive.v" Line 128: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_drive.v" Line 140: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <uart_tx>.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_tx.v" Line 55: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_tx.v" Line 61: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_tx.v" Line 68: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_tx.v" Line 74: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_tx.v" Line 80: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\uart_tx.v" Line 86: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+Elaborating module <bcd>.
+WARNING:HDLCompiler:189 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 138: Size mismatch in connection of port <hex>. Formal port size is 17-bit while actual signal size is 16-bit.
+
+Elaborating module <ad7606>.
+WARNING:HDLCompiler:413 - "D:\Xilinx\voltage_sample\src\ad7606.v" Line 60: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:189 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 155: Size mismatch in connection of port <ad_ch2>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 155: Assignment to ad_ch2 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 156: Size mismatch in connection of port <ad_ch3>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 156: Assignment to ad_ch3 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 157: Size mismatch in connection of port <ad_ch4>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 157: Assignment to ad_ch4 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 158: Size mismatch in connection of port <ad_ch5>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 158: Assignment to ad_ch5 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 159: Size mismatch in connection of port <ad_ch6>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 159: Assignment to ad_ch6 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 160: Size mismatch in connection of port <ad_ch7>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 160: Assignment to ad_ch7 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 161: Size mismatch in connection of port <ad_ch8>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\Xilinx\voltage_sample\src\main_function.v" Line 161: Assignment to ad_ch8 ignored, since the identifier is never used
+
+Elaborating module <voltage_cal>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <main_function>.
+    Related source file is "D:\Xilinx\voltage_sample\src\main_function.v".
+        CLK_FRE = 50
+        BAUD_RATE = 115200
+        SAMPLE_TIME = 20
+INFO:Xst:3210 - "D:\Xilinx\voltage_sample\src\main_function.v" line 143: Output port <ad_ch2> of the instance <ad7606> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\voltage_sample\src\main_function.v" line 143: Output port <ad_ch3> of the instance <ad7606> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\voltage_sample\src\main_function.v" line 143: Output port <ad_ch4> of the instance <ad7606> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\voltage_sample\src\main_function.v" line 143: Output port <ad_ch5> of the instance <ad7606> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\voltage_sample\src\main_function.v" line 143: Output port <ad_ch6> of the instance <ad7606> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\voltage_sample\src\main_function.v" line 143: Output port <ad_ch7> of the instance <ad7606> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Xilinx\voltage_sample\src\main_function.v" line 143: Output port <ad_ch8> of the instance <ad7606> is unconnected or connected to loadless signal.
+    Found 4-bit register for signal <state>.
+    Found 16-bit register for signal <ad_temp>.
+    Found 32-bit register for signal <i>.
+    Found 1-bit register for signal <uart_we>.
+    Found 4-bit register for signal <t>.
+    Found 32-bit adder for signal <i[31]_GND_1_o_add_1_OUT> created at line 66.
+    Found 4-bit adder for signal <state[3]_GND_1_o_add_4_OUT> created at line 83.
+    Found 4-bit adder for signal <t[3]_GND_1_o_add_7_OUT> created at line 92.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <main_function> synthesized.
+
+Synthesizing Unit <uart_drive>.
+    Related source file is "D:\Xilinx\voltage_sample\src\uart_drive.v".
+        CLK_FRE = 50
+        BAUD_RATE = 115200
+    Found 4-bit register for signal <i>.
+    Found 1-bit register for signal <uart_end>.
+    Found 1-bit register for signal <uart_tx_we>.
+    Found 8-bit register for signal <data_tx>.
+    Found 7-bit adder for signal <n0070[6:0]> created at line 73.
+    Found 7-bit adder for signal <n0072[6:0]> created at line 97.
+    Found 7-bit adder for signal <n0074[6:0]> created at line 109.
+    Found 7-bit adder for signal <n0076[6:0]> created at line 121.
+    Found 7-bit adder for signal <n0078[6:0]> created at line 133.
+    Found 4-bit adder for signal <i[3]_GND_2_o_add_26_OUT> created at line 140.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <uart_drive> synthesized.
+
+Synthesizing Unit <uart_tx>.
+    Related source file is "D:\Xilinx\voltage_sample\src\uart_tx.v".
+        CLK_FRE = 50
+        BAUD_RATE = 115200
+    Found 4-bit register for signal <data_bit>.
+    Found 16-bit register for signal <i>.
+    Found 1-bit register for signal <uart_tx_end>.
+    Found 1-bit register for signal <tx_reg>.
+    Found 4-bit adder for signal <data_bit[3]_GND_3_o_add_14_OUT> created at line 80.
+    Found 16-bit adder for signal <i[15]_GND_3_o_add_15_OUT> created at line 86.
+    Found 3-bit subtractor for signal <GND_3_o_GND_3_o_sub_9_OUT<2:0>> created at line 73.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_3_o_data_tx[7]_Mux_9_o> created at line 73.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred  11 Multiplexer(s).
+Unit <uart_tx> synthesized.
+
+Synthesizing Unit <bcd>.
+    Related source file is "D:\Xilinx\voltage_sample\src\bcd.v".
+WARNING:Xst:647 - Input <hex<16:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 19-bit register for signal <rhexd>.
+    Found 14-bit register for signal <rhexc>.
+    Found 10-bit register for signal <rhexb>.
+    Found 4-bit register for signal <rhexa>.
+    Found 4-bit register for signal <resa<3:0>>.
+    Found 4-bit register for signal <resb<3:0>>.
+    Found 4-bit register for signal <resc<3:0>>.
+    Found 4-bit register for signal <resd<3:0>>.
+    Found 4-bit register for signal <rese>.
+    Found 16-bit register for signal <n0066>.
+    Found 5-bit adder for signal <n0150[4:0]> created at line 117.
+    Found 6-bit adder for signal <BUS_0056_GND_4_o_add_20_OUT> created at line 119.
+    Found 6-bit adder for signal <BUS_0056_GND_4_o_add_22_OUT> created at line 121.
+    Found 6-bit adder for signal <BUS_0056_GND_4_o_add_24_OUT> created at line 123.
+    Found 5-bit adder for signal <n0165[4:0]> created at line 117.
+    Found 6-bit adder for signal <BUS_0116_GND_4_o_add_32_OUT> created at line 119.
+    Found 6-bit adder for signal <BUS_0116_GND_4_o_add_34_OUT> created at line 121.
+    Found 6-bit adder for signal <BUS_0116_GND_4_o_add_36_OUT> created at line 123.
+    Found 3-bit adder for signal <n0180[2:0]> created at line 117.
+    Found 5-bit adder for signal <n0183[4:0]> created at line 117.
+    Found 6-bit adder for signal <n0187> created at line 117.
+    Found 6-bit adder for signal <BUS_0177_GND_4_o_add_44_OUT> created at line 119.
+    Found 6-bit adder for signal <BUS_0177_GND_4_o_add_46_OUT> created at line 121.
+    Found 6-bit adder for signal <BUS_0177_GND_4_o_add_48_OUT> created at line 123.
+    Found 3-bit adder for signal <n0195[2:0]> created at line 117.
+    Found 5-bit adder for signal <n0136> created at line 117.
+    Found 6-bit adder for signal <n0145> created at line 119.
+    Found 6-bit adder for signal <n0144> created at line 121.
+    Found 6-bit adder for signal <n0143> created at line 123.
+    Found 4-bit adder for signal <n0147> created at line 111.
+    Found 6-bit adder for signal <_n0209> created at line 117.
+    Found 6-bit adder for signal <n0157> created at line 117.
+    Found 6-bit adder for signal <_n0211> created at line 117.
+    Found 6-bit adder for signal <n0172> created at line 117.
+    Found 16x19-bit Read Only RAM for signal <rhex[3][3]_PWR_5_o_wide_mux_5_OUT>
+    Found 16x14-bit Read Only RAM for signal <rhex[2][3]_PWR_5_o_wide_mux_8_OUT>
+    Found 16x10-bit Read Only RAM for signal <rhex[1][3]_PWR_5_o_wide_mux_11_OUT>
+    Found 6-bit comparator greater for signal <GND_4_o_BUS_0056_LessThan_20_o> created at line 118
+    Found 6-bit comparator greater for signal <GND_4_o_BUS_0056_LessThan_22_o> created at line 120
+    Found 6-bit comparator greater for signal <GND_4_o_BUS_0056_LessThan_24_o> created at line 122
+    Found 6-bit comparator greater for signal <GND_4_o_BUS_0116_LessThan_32_o> created at line 118
+    Found 6-bit comparator greater for signal <GND_4_o_BUS_0116_LessThan_34_o> created at line 120
+    Found 6-bit comparator greater for signal <GND_4_o_BUS_0116_LessThan_36_o> created at line 122
+    Found 6-bit comparator greater for signal <GND_4_o_BUS_0177_LessThan_44_o> created at line 118
+    Found 6-bit comparator greater for signal <GND_4_o_BUS_0177_LessThan_46_o> created at line 120
+    Found 6-bit comparator greater for signal <GND_4_o_BUS_0177_LessThan_48_o> created at line 122
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0236_LessThan_55_o> created at line 118
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0236_LessThan_57_o> created at line 120
+    Found 5-bit comparator greater for signal <GND_4_o_BUS_0236_LessThan_59_o> created at line 122
+    Summary:
+	inferred   3 RAM(s).
+	inferred  22 Adder/Subtractor(s).
+	inferred  83 D-type flip-flop(s).
+	inferred  12 Comparator(s).
+	inferred  12 Multiplexer(s).
+Unit <bcd> synthesized.
+
+Synthesizing Unit <ad7606>.
+    Related source file is "D:\Xilinx\voltage_sample\src\ad7606.v".
+        IDLE = 4'b0000
+        AD_CONV = 4'b0001
+        Wait_1 = 4'b0010
+        Wait_busy = 4'b0011
+        READ_CH1 = 4'b0100
+        READ_CH2 = 4'b0101
+        READ_CH3 = 4'b0110
+        READ_CH4 = 4'b0111
+        READ_CH5 = 4'b1000
+        READ_CH6 = 4'b1001
+        READ_CH7 = 4'b1010
+        READ_CH8 = 4'b1011
+        READ_DONE = 4'b1100
+WARNING:Xst:647 - Input <first_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <cnt>.
+    Found 1-bit register for signal <ad_reset>.
+    Found 4-bit register for signal <state>.
+    Found 16-bit register for signal <ad_ch1>.
+    Found 16-bit register for signal <ad_ch2>.
+    Found 16-bit register for signal <ad_ch3>.
+    Found 16-bit register for signal <ad_ch4>.
+    Found 16-bit register for signal <ad_ch5>.
+    Found 16-bit register for signal <ad_ch6>.
+    Found 16-bit register for signal <ad_ch7>.
+    Found 16-bit register for signal <ad_ch8>.
+    Found 1-bit register for signal <ad_cs>.
+    Found 1-bit register for signal <ad_rd>.
+    Found 1-bit register for signal <ad_convstab>.
+    Found 6-bit register for signal <i>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 13                                             |
+    | Transitions        | 38                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n_INV_29_o (positive)                      |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <cnt[15]_GND_5_o_add_2_OUT> created at line 60.
+    Found 6-bit adder for signal <i[5]_GND_5_o_add_57_OUT> created at line 218.
+    Found 16-bit comparator greater for signal <cnt[15]_PWR_6_o_LessThan_2_o> created at line 58
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 154 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  13 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ad7606> synthesized.
+
+Synthesizing Unit <voltage_cal>.
+    Related source file is "D:\Xilinx\voltage_sample\voltage_cal.v".
+    Found 8-bit register for signal <sign>.
+    Found 17-bit register for signal <ch1_data_reg<31:15>>.
+    Found 16-bit register for signal <_hex<15:0>>.
+    Found 16-bit register for signal <ch1_reg>.
+    Found 16-bit subtractor for signal <PWR_7_o_GND_6_o_add_3_OUT> created at line 47.
+    Found 16x16-bit multiplier for signal <ch1_reg[15]_PWR_7_o_MuLt_11_OUT> created at line 68.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <voltage_cal> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x10-bit single-port Read Only RAM                   : 1
+ 16x14-bit single-port Read Only RAM                   : 1
+ 16x19-bit single-port Read Only RAM                   : 1
+# Multipliers                                          : 1
+ 16x16-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 37
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 1
+ 3-bit adder                                           : 2
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 5
+ 5-bit adder                                           : 4
+ 6-bit adder                                           : 16
+ 7-bit adder                                           : 5
+# Registers                                            : 37
+ 1-bit register                                        : 9
+ 10-bit register                                       : 1
+ 14-bit register                                       : 1
+ 16-bit register                                       : 14
+ 17-bit register                                       : 1
+ 19-bit register                                       : 1
+ 20-bit register                                       : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 5
+ 6-bit register                                        : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 13
+ 16-bit comparator greater                             : 1
+ 5-bit comparator greater                              : 3
+ 6-bit comparator greater                              : 9
+# Multiplexers                                         : 48
+ 1-bit 2-to-1 multiplexer                              : 10
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 6
+ 6-bit 2-to-1 multiplexer                              : 21
+ 8-bit 2-to-1 multiplexer                              : 7
+# FSMs                                                 : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <sign_0> in Unit <voltage_cal> is equivalent to the following 2 FFs/Latches, which will be removed : <sign_3> <sign_5> 
+INFO:Xst:2261 - The FF/Latch <sign_4> in Unit <voltage_cal> is equivalent to the following 2 FFs/Latches, which will be removed : <sign_6> <sign_7> 
+WARNING:Xst:1710 - FF/Latch <sign_0> (without init value) has a constant value of 1 in block <voltage_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sign_4> (without init value) has a constant value of 0 in block <voltage_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ch1_data_reg_31> of sequential type is unconnected in block <voltage_cal>.
+WARNING:Xst:2404 -  FFs/Latches <sign<7:6>> (without init value) have a constant value of 0 in block <voltage_cal>.
+
+Synthesizing (advanced) Unit <ad7606>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <ad7606> synthesized (advanced).
+
+Synthesizing (advanced) Unit <bcd>.
+	The following adders/subtractors are grouped into adder tree <Madd_n01871> :
+ 	<Madd_n0180[2:0]> in block <bcd>, 	<Madd_n0183[4:0]> in block <bcd>, 	<Madd_n0187> in block <bcd>.
+	The following adders/subtractors are grouped into adder tree <Madd_n01721> :
+ 	<Madd_n0165[4:0]> in block <bcd>, 	<Madd__n0211> in block <bcd>.
+	The following adders/subtractors are grouped into adder tree <Madd_n01571> :
+ 	<Madd_n0150[4:0]> in block <bcd>, 	<Madd__n0209> in block <bcd>.
+INFO:Xst:3231 - The small RAM <Mram_rhex[3][3]_PWR_5_o_wide_mux_5_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 19-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0066<15:12>>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_rhex[1][3]_PWR_5_o_wide_mux_11_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 10-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0066<7:4>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_rhex[2][3]_PWR_5_o_wide_mux_8_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 14-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0066<11:8>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <bcd> synthesized (advanced).
+
+Synthesizing (advanced) Unit <main_function>.
+The following registers are absorbed into counter <i>: 1 register on signal <i>.
+The following registers are absorbed into counter <state>: 1 register on signal <state>.
+The following registers are absorbed into counter <t>: 1 register on signal <t>.
+Unit <main_function> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_drive>.
+The following registers are absorbed into counter <i>: 1 register on signal <i>.
+Unit <uart_drive> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_tx>.
+The following registers are absorbed into counter <i>: 1 register on signal <i>.
+Unit <uart_tx> synthesized (advanced).
+WARNING:Xst:2677 - Node <ch1_data_reg_31> of sequential type is unconnected in block <voltage_cal>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x10-bit single-port distributed Read Only RAM       : 1
+ 16x14-bit single-port distributed Read Only RAM       : 1
+ 16x19-bit single-port distributed Read Only RAM       : 1
+# Multipliers                                          : 1
+ 16x16-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 22
+ 16-bit subtractor                                     : 1
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 11
+ 7-bit adder                                           : 5
+# Adder Trees                                          : 3
+ 6-bit / 4-inputs adder tree                           : 3
+# Counters                                             : 6
+ 16-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+# Registers                                            : 308
+ Flip-Flops                                            : 308
+# Comparators                                          : 13
+ 16-bit comparator greater                             : 1
+ 5-bit comparator greater                              : 3
+ 6-bit comparator greater                              : 9
+# Multiplexers                                         : 43
+ 1-bit 2-to-1 multiplexer                              : 10
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 3
+ 6-bit 2-to-1 multiplexer                              : 21
+ 8-bit 2-to-1 multiplexer                              : 7
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <sign_0> (without init value) has a constant value of 1 in block <voltage_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sign_3> (without init value) has a constant value of 1 in block <voltage_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sign_4> (without init value) has a constant value of 0 in block <voltage_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sign_5> (without init value) has a constant value of 1 in block <voltage_cal>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ad7606/FSM_0> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+ 1100  | 1100
+-------------------
+WARNING:Xst:1710 - FF/Latch <rhexd_0> (without init value) has a constant value of 0 in block <bcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rhexc_0> (without init value) has a constant value of 0 in block <bcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rhexb_0> (without init value) has a constant value of 0 in block <bcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <state_3> (without init value) has a constant value of 0 in block <main_function>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <rhexd_1> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexd_4> 
+INFO:Xst:2261 - The FF/Latch <rhexd_13> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexd_16> 
+INFO:Xst:2261 - The FF/Latch <rhexd_2> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexd_14> 
+INFO:Xst:2261 - The FF/Latch <rhexb_1> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexb_4> 
+INFO:Xst:2261 - The FF/Latch <rhexc_1> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexc_4> 
+
+Optimizing unit <main_function> ...
+
+Optimizing unit <ad7606> ...
+
+Optimizing unit <uart_drive> ...
+
+Optimizing unit <uart_tx> ...
+
+Optimizing unit <bcd> ...
+
+Optimizing unit <voltage_cal> ...
+WARNING:Xst:1710 - FF/Latch <uart_drive/data_tx_7> (without init value) has a constant value of 0 in block <main_function>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_15> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_14> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_13> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_12> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_11> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_10> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_9> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_8> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_7> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_6> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_5> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_4> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_3> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_2> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_1> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch8_0> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_15> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_14> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_13> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_12> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_11> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_10> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_9> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_8> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_7> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_6> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_5> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_4> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_3> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_2> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_1> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch7_0> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_15> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_14> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_13> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_12> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_11> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_10> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_9> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_8> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_7> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_6> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_5> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_4> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_3> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_2> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_1> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch6_0> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_15> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_14> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_13> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_12> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_11> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_10> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_9> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_8> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_7> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_6> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_5> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_4> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_3> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_2> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_1> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch5_0> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_15> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_14> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_13> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_12> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_11> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_10> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_9> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_8> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_7> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_6> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_5> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_4> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_3> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_2> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_1> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch4_0> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_15> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_14> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_13> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_12> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_11> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_10> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_9> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_8> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_7> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_6> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_5> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_4> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_3> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_2> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_1> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch3_0> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_15> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_14> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_13> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_12> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_11> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_10> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_9> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_8> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_7> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_6> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_5> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_4> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_3> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_2> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_1> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:2677 - Node <ad7606/ad_ch2_0> of sequential type is unconnected in block <main_function>.
+WARNING:Xst:1710 - FF/Latch <uart_drive/uart_tx/i_15> (without init value) has a constant value of 0 in block <main_function>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_drive/uart_tx/i_14> (without init value) has a constant value of 0 in block <main_function>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_drive/uart_tx/i_13> (without init value) has a constant value of 0 in block <main_function>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_drive/uart_tx/i_12> (without init value) has a constant value of 0 in block <main_function>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_drive/uart_tx/i_11> (without init value) has a constant value of 0 in block <main_function>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_drive/uart_tx/i_10> (without init value) has a constant value of 0 in block <main_function>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_drive/uart_tx/i_9> (without init value) has a constant value of 0 in block <main_function>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <_bcd/rese_3> (without init value) has a constant value of 0 in block <main_function>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main_function, actual ratio is 6.
+FlipFlop _bcd/rhexb_1 has been replicated 2 time(s)
+FlipFlop _bcd/rhexc_1 has been replicated 1 time(s)
+FlipFlop _bcd/rhexd_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <main_function> :
+	Found 3-bit shift register for signal <_bcd/resa<3:0>_0>.
+	Found 2-bit shift register for signal <_bcd/rhexa_3>.
+	Found 2-bit shift register for signal <_bcd/rhexa_2>.
+	Found 2-bit shift register for signal <_bcd/rhexa_1>.
+Unit <main_function> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 201
+ Flip-Flops                                            : 201
+# Shift Registers                                      : 4
+ 2-bit shift register                                  : 3
+ 3-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : main_function.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 513
+#      GND                         : 1
+#      INV                         : 21
+#      LUT1                        : 23
+#      LUT2                        : 33
+#      LUT3                        : 43
+#      LUT4                        : 90
+#      LUT5                        : 34
+#      LUT6                        : 118
+#      MUXCY                       : 69
+#      MUXF7                       : 7
+#      VCC                         : 1
+#      XORCY                       : 73
+# FlipFlops/Latches                : 205
+#      FD                          : 70
+#      FDC                         : 36
+#      FDCE                        : 52
+#      FDE                         : 18
+#      FDR                         : 4
+#      FDRE                        : 22
+#      FDS                         : 3
+# Shift Registers                  : 4
+#      SRLC16E                     : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 18
+#      OBUF                        : 8
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             205  out of  11440     1%  
+ Number of Slice LUTs:                  366  out of   5720     6%  
+    Number used as Logic:               362  out of   5720     6%  
+    Number used as Memory:                4  out of   1440     0%  
+       Number used as SRL:                4
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    400
+   Number with an unused Flip Flop:     195  out of    400    48%  
+   Number with an unused LUT:            34  out of    400     8%  
+   Number of fully used LUT-FF pairs:   171  out of    400    42%  
+   Number of unique control sets:        15
+
+IO Utilization: 
+ Number of IOs:                          28
+ Number of bonded IOBs:                  27  out of    186    14%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 210   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 17.490ns (Maximum Frequency: 57.176MHz)
+   Minimum input arrival time before clock: 5.221ns
+   Maximum output required time after clock: 4.534ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 17.490ns (frequency: 57.176MHz)
+  Total number of paths / destination ports: 20412036 / 294
+-------------------------------------------------------------------------
+Delay:               17.490ns (Levels of Logic = 14)
+  Source:            _bcd/rhexd_2 (FF)
+  Destination:       _bcd/rese_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: _bcd/rhexd_2 to _bcd/rese_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.525   1.326  _bcd/rhexd_2 (_bcd/rhexd_2)
+     LUT4:I1->O            2   0.235   0.726  _bcd/ADDERTREE_INTERNAL_Madd1_xor<2>11 (_bcd/ADDERTREE_INTERNAL_Madd_21)
+     LUT6:I5->O           10   0.254   1.116  _bcd/ADDERTREE_INTERNAL_Madd2_lut<0>21 (_bcd/ADDERTREE_INTERNAL_Madd2_lut<0>2)
+     LUT6:I4->O            1   0.250   0.910  _bcd/ADDERTREE_INTERNAL_Madd3_lut<0>_SW4 (N154)
+     LUT6:I3->O            6   0.235   0.876  _bcd/ADDERTREE_INTERNAL_Madd3_lut<0> (_bcd/ADDERTREE_INTERNAL_Madd3_lut<0>)
+     LUT6:I5->O            2   0.254   1.002  _bcd/ADDERTREE_INTERNAL_Madd521 (_bcd/ADDERTREE_INTERNAL_Madd52)
+     LUT6:I2->O            6   0.254   0.876  _bcd/ADDERTREE_INTERNAL_Madd5_cy<0>41 (_bcd/ADDERTREE_INTERNAL_Madd5_cy<0>3)
+     LUT5:I4->O            7   0.254   0.910  _bcd/ADDERTREE_INTERNAL_Madd5_cy<0>51 (_bcd/ADDERTREE_INTERNAL_Madd5_cy<0>4)
+     LUT6:I5->O           13   0.254   1.098  _bcd/ADDERTREE_INTERNAL_Madd6_lut<1>1 (_bcd/ADDERTREE_INTERNAL_Madd6_lut<1>)
+     LUT6:I5->O           11   0.254   1.039  _bcd/ADDERTREE_INTERNAL_Madd8_lut<0>111 (_bcd/ADDERTREE_INTERNAL_Madd8_lut<0>11)
+     LUT4:I3->O            1   0.254   0.682  _bcd/ADDERTREE_INTERNAL_Madd8_cy<0>41_SW2 (N103)
+     LUT6:I5->O            5   0.254   1.069  _bcd/GND_4_o_BUS_0177_LessThan_44_o11 (_bcd/ADDERTREE_INTERNAL_Madd8_cy<0>4)
+     LUT5:I2->O            1   0.235   0.790  _bcd/Mmux_BUS_0177_BUS_0177_mux_51_OUT61_SW1 (N164)
+     LUT5:I3->O            6   0.250   0.984  _bcd/Mmux_BUS_0177_BUS_0177_mux_51_OUT61 (_bcd/BUS_0177_BUS_0177_mux_51_OUT<5>)
+     LUT6:I4->O            1   0.250   0.000  _bcd/Madd_n0147_lut<0>1 (_bcd/Madd_n0147_lut<0>)
+     FD:D                      0.074          _bcd/rese_0
+    ----------------------------------------
+    Total                     17.490ns (4.086ns logic, 13.404ns route)
+                                       (23.4% logic, 76.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 160 / 160
+-------------------------------------------------------------------------
+Offset:              5.221ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       ad_temp_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst_n to ad_temp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.328   0.909  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O            120   0.255   2.270  rst_n_inv1_INV_0 (ad7606/rst_n_inv)
+     FDRE:R                    0.459          ad7606/ad_ch1_0
+    ----------------------------------------
+    Total                      5.221ns (2.042ns logic, 3.179ns route)
+                                       (39.1% logic, 60.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.534ns (Levels of Logic = 1)
+  Source:            ad7606/ad_reset (FF)
+  Destination:       ad_reset (PAD)
+  Source Clock:      clk rising
+
+  Data Path: ad7606/ad_reset to ad_reset
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             13   0.525   1.097  ad7606/ad_reset (ad7606/ad_reset)
+     OBUF:I->O                 2.912          ad_reset_OBUF (ad_reset)
+    ----------------------------------------
+    Total                      4.534ns (3.437ns logic, 1.097ns route)
+                                       (75.8% logic, 24.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   17.490|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.50 secs
+ 
+--> 
+
+Total memory usage is 4510568 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  170 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
+

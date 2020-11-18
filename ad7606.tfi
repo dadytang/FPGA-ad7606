@@ -1,0 +1,26 @@
+
+
+
+// Instantiate the module
+ad7606 instance_name (
+    .clk(clk), 
+    .rst_n(rst_n), 
+    .ad_data(ad_data), 
+    .ad_busy(ad_busy), 
+    .first_data(first_data), 
+    .ad_os(ad_os), 
+    .ad_cs(ad_cs), 
+    .ad_rd(ad_rd), 
+    .ad_reset(ad_reset), 
+    .ad_convstab(ad_convstab), 
+    .ad_ch1(ad_ch1), 
+    .ad_ch2(ad_ch2), 
+    .ad_ch3(ad_ch3), 
+    .ad_ch4(ad_ch4), 
+    .ad_ch5(ad_ch5), 
+    .ad_ch6(ad_ch6), 
+    .ad_ch7(ad_ch7), 
+    .ad_ch8(ad_ch8)
+    );
+
+

@@ -1,0 +1,48 @@
+# Reading D:/modeltech64.10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {uart_drive_test.fdo} 
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module uart_drive
+# 
+# Top level modules:
+# 	uart_drive
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module uart_drive_test
+# 
+# Top level modules:
+# 	uart_drive_test
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.uart_drive_test glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_tx(fast)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_drive(fast)".
+# 
+# Loading work.uart_drive_test(fast)
+# Loading work.uart_drive(fast)
+# Loading work.uart_tx(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) uart_drive_test.v(47): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'sign'. The port definition is at: src/uart_drive.v(28).
+# 
+#         Region: /uart_drive_test/uut
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
